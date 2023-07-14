@@ -15,7 +15,7 @@ def getAllUsers (ids):
         diccionarios = pool.map (getOneUser, ids)
         return diccionarios
                 
-#Sin concurrencia (duracion aproximada 41 segundos)
+#Concurrencia usada (multiprocessing) duracion aproximada: 6 segundos
 
 if __name__== "__main__":
     start_time = time.time ()
