@@ -9,7 +9,7 @@ Endpoints utilizados
 Se crearon 4 funciones,
 | Funcion  | Descripcion |
 | ----------- | ----------- |
-| get_characters_page  | def para obtener una pagina de los personajes
-#recibe una pagina con numeros del 1-11 (paginas disponibles)
-#devuelve el numero de id y nombre del personaje  |
-|  |  |
+| get_characters_page  | def para obtener una pagina de los personajes |
+|                      | recibe una pagina con numeros del 1-11 (paginas disponibles) |
+|                      | devuelve el numero de id y nombre del personaje  |
+| -------------------- | ------------------------------------------------ | 
