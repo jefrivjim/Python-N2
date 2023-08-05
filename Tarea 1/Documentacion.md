@@ -6,7 +6,7 @@ Endpoints utilizados
 3. https://api.attackontitanapi.com/titans (despliega todos los titanes)
 4. https://api.attackontitanapi.com/titans/1 (despliega un titan en especifico)
 
-Se crearon 4 funciones,
+Se crearon 4 funciones, guardados en archivo **get_characters.py**
 
 1. **get_characters_page**
 - def para obtener una pagina de los personajes
@@ -26,3 +26,5 @@ Se crearon 4 funciones,
 - def para obtener un titan en especifico
 - recibe el id de el titan del 1-9 (disponibles)
 - devuelve un diccionario del titan accedido
+
+Finalmente se corren desde el archivo **main.py**
