@@ -20,8 +20,16 @@ df = pd.DataFrame (titans)
 x = df ["name"]
 y = df ["height"]
 
-plt.bar (x,y, color="purple", edgecolor="black")
+
+""" plt.bar (x,y, color=("lightblue"), edgecolor=["blue"])
 plt.xlabel ("Titans")
 plt.ylabel ("Height/Meters")
 plt.title ("Titans height comparison")
+plt.show () """
+
+fig, ax = plt.subplots()
+bar_height = ax.bar (x,y)
+ax.set (ylabel="Height/Meters", title= "Titans Height Comparison")
+ax.bar_label(bar_height, fmt='{:,.0f}')
+ax.bar (x,y, color="lightblue", edgecolor="blue")
 plt.show ()
