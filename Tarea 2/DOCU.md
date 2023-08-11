@@ -10,3 +10,5 @@ Los graficos creados son los siguientes,
 1. Comparacion de altura de los gigantes
 2. Porcentaje de titanes que tiene cada bando de la guerra
 3. Porcentaje de personajes reportados como muertos o vivos
+
+Se corre el codigo desde el archivo graphics.py
