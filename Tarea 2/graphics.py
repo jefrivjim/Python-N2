@@ -114,7 +114,10 @@ the Female Titan, the Jaw Titan and the War Hammer Titan.\n""")
                 time.sleep (3)
                 os.system ("cls")
                 graphics = int (input(graphics_menu))
-            
+    else:
+        print ("Enter valid option")
+        time.sleep (2)         
+
     os.system ("cls")
     option = int(input(menu))
     titans_menu = True
