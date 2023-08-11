@@ -19,7 +19,7 @@ def get_character_id (id):
 
 def get_titans ():
 #def para obtener todos los titanes
-#devuelve el id y nombre de cada titan
+#devuelve una lista de todos los titanes
     response = requests.get ("https://api.attackontitanapi.com/titans")
     titan = response.json () ["results"]
     return titan
@@ -31,6 +31,20 @@ def get_titan_id (id):
     response = requests.get (f"https://api.attackontitanapi.com/titans/{id}")
     titan = response.json ()
     return titan
+
+def get_all_characters_info ():
+#def para obtener la informacion de todos los personajes
+#devuelve una lista de diccionarios de todos los personajes
+    urls = ["https://api.attackontitanapi.com/characters?page=0","https://api.attackontitanapi.com/characters?page=1","https://api.attackontitanapi.com/characters?page=2","https://api.attackontitanapi.com/characters?page=3","https://api.attackontitanapi.com/characters?page=4","https://api.attackontitanapi.com/characters?page=5","https://api.attackontitanapi.com/characters?page=6","https://api.attackontitanapi.com/characters?page=7","https://api.attackontitanapi.com/characters?page=8","https://api.attackontitanapi.com/characters?page=9","https://api.attackontitanapi.com/characters?page=10","https://api.attackontitanapi.com/characters?page=11"]
+    characters = []
+
+    for url in urls:
+        response = requests.get (url)
+        character = response.json ()
+        characters.append (character)
+    
+    return characters
+
 
 
     
